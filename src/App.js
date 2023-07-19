@@ -1,22 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { Routes, Route, NavLink } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          JAYESH you are <strong>Awasome</strong>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>
+          <span style={{ color: "pink" }}>AAYUSHA</span> you are{" "}
+          <strong>Awesome 😊💗</strong>
+        </h2>
       </header>
     </div>
   );
