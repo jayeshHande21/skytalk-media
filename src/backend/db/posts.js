@@ -1,36 +1,475 @@
 import { v4 as uuid } from "uuid";
 import { formatDate } from "../utils/authUtils";
-
-/**
- * Posts can be added here.
- * You can add default posts of your wish with different attributes
- * */
+import img1 from "../Images/img1.jpg";
+import img2 from "../Images/img2.jpg";
+import img3 from "../Images/img3.jpg";
+import img4 from "../Images/img4.jpg";
+import OIP from "../Images/OIP.jpg";
+import img6 from "../Images/img6.jpg";
+import img7 from "../Images/img7.jpg";
+import img10 from "../Images/img10.jpg";
+import cessna from "../Images/cessna.jpg";
+import airways from "../Images/airways.jpg";
+import alexn from "../Images/alexn.jpg";
+import emirates from "../Images/emirates.jpg";
+import skyteam from "../Images/skyteam.jpg";
+import vtvlo from "../Images/vt-vlo.jpg";
+import vid1 from "../Images/vid1.mp4";
+import BoeingAirplanes from "../Images/BoeingAirplanes.jpg";
+import AirlinersNet from "../Images/AirlinersNet.jpg";
 
 export const posts = [
   {
     _id: uuid(),
-    content:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+    content: "Quiz time: where in the world are we? 🌏",
+    shouldDisplayImage: true,
+    shouldDisplayVideo: false,
     likes: {
-      likeCount: 0,
+      likeCount: 1076,
       likedBy: [],
       dislikedBy: [],
     },
-    username: "adarshbalika",
-    createdAt: formatDate(),
+    userImg: skyteam,
+    img: img1,
+    name: "Sky Team",
+    username: "@skyTeam",
+    createdAt: "Feb 12 2017",
+    follower: 0,
     updatedAt: formatDate(),
   },
   {
     _id: uuid(),
     content:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "Strong thunderstorms with gusty winds accompanied by rain are impacting flight operations in #Delhi at @DelhiAirport. With various flights circling, if the weather doesn't clear up, its only a matter of time before some begin to divert. If you aren't doing much, watching @flightradar24 to see who ends up where may be worth your while. #AvGeek",
     likes: {
-      likeCount: 0,
+      likeCount: 534,
       likedBy: [],
       dislikedBy: [],
     },
-    username: "shubhamsoni",
-    createdAt: formatDate(),
+    shouldDisplayImage: true,
+    shouldDisplayVideo: false,
+    userImg: vtvlo,
+    img: img2,
+    name: "vt-vlo",
+    username: "@vt-vlo",
+    createdAt: "Aug 23 2020",
     updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Bonjour, Montréal! ✈️🍁  We’re so excited to be here and with daily flights from now on, we can’t wait to see more of what this beautiful city has to offer! https://emirat.es/yj27ve",
+    likes: {
+      likeCount: 739,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: true,
+    shouldDisplayVideo: false,
+    userImg: emirates,
+    img: img3,
+    name: "Emirates",
+    username: "@emirates",
+    createdAt: "July 2 2019",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "London Gatwick Airport is preparing to welcome back Air China this week. Here are the details. https://airwaysmag.com/air-china-returns-london-gatwick/",
+    likes: {
+      likeCount: 632,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: true,
+    shouldDisplayVideo: false,
+    userImg: OIP,
+    img: img4,
+    name: "John Kapoor",
+    username: "@johnKapoor",
+    createdAt: "June 21 2017",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Incredible @NorthernPac 757-200 on a misty rainy arrival at @ANCairport Proving run from @flyONT  Edmond Huot designed livery fits the scene perfectly. Power of the @RollsRoyce engines. Great State Of @TravelAlaska @BoeingAirplanes thx @daperlitz",
+    likes: {
+      likeCount: 386,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: true,
+    userImg: alexn,
+    video: "",
+    name: "Alex Ngotho",
+    username: "@alexngotho",
+    createdAt: "Sep 17 2018",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Our current Top of the Day with a Japan Air Force - JASDF Boeing 777-3SB/ERAT Sapporo Photo by Jerry Pang #aviationlovers #planespotting",
+    likes: {
+      likeCount: 5347,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: true,
+    shouldDisplayVideo: false,
+    userImg: AirlinersNet,
+    img: img6,
+    name: "Airliners Net",
+    username: "@airliners.net",
+    createdAt: "Nov 13 2022",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+
+  {
+    _id: uuid(),
+    content:
+      "The 787-10 Dreamliner flights, which utilized a 30/70 blend of sustainable aviation fuel, demonstrated how coordinating navigation across multiple global airspace regions can improve safety, sustainability, operational efficiency and emissions.        More: https://bit.ly/3JlXCjQ ",
+    likes: {
+      likeCount: 817,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    userImg: BoeingAirplanes,
+    img: "no",
+    name: "Boeing Airplanes",
+    username: "@boeingairplanes",
+    createdAt: "Sep 1 2016",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Oooh, ahh! An unrivaled passenger experience in the sky.See and explore the interior of the 777X at our #ParisAirShow exhibit, with increased space and spectacular lighting elements.",
+    likes: {
+      likeCount: 467,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: true,
+    userImg: BoeingAirplanes,
+    video: "",
+    name: "Boeing Airplanes",
+    username: "@boeingairplanes",
+    createdAt: "July 5 2018",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "We will be flying our iconic A380 to Bali, starting 1 June. This will mark a significant milestone in Indonesia's aviation history as the first A380 service to the country! https://emirat.es/59s8s7",
+    likes: {
+      likeCount: 972,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: true,
+    userImg: emirates,
+    video: vid1,
+    name: "Emirates",
+    username: "@emirates",
+    createdAt: "dec 7 2021",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Enjoy a light read during your travels? Check out our members’ inflight magazines to discover interesting articles, travel advice and inspiring stories that will keep you entertained 🛫",
+    likes: {
+      likeCount: 850,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: true,
+    shouldDisplayVideo: false,
+    userImg: skyteam,
+    img: img10,
+    name: "Sky Team",
+    username: "@skyTeam",
+    createdAt: "oct 16 2019",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Emirates sees a new Boeing 777X version to be available in 6-9 months!",
+    likes: {
+      likeCount: 488,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: false,
+    userImg: OIP,
+    img: "",
+    video: "",
+    name: "John Kapoor",
+    username: "@johnKapoor",
+    createdAt: "Nov 16 2019",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "As India's newest all @ATRaircraft airline - @fly91_IN prepares to induct the ATR 72-600, here is a throwback to the first ATR 72-600 to be inducted by an Indian airline. VT-JCX was inducted by @jetairways for its subsidiary  JetKonnect in 2012. #AvGeek #ThrowbackThursday",
+    likes: {
+      likeCount: 1334,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    userImg: vtvlo,
+    img: "",
+    name: "vt-vlo",
+    username: "@vt-vlo",
+    createdAt: "jan 21 2018",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "A Mandarin Airlines @ATRaircraft ATR-72-600 departing Kaohsiung - International Photo by Dennis Chang #planespotting #aviationphotography",
+    likes: {
+      likeCount: 2651,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: false,
+    userImg: AirlinersNet,
+    img: "",
+    name: "Airliners Net",
+    username: "@airliners.net",
+    createdAt: "Feb 23 2016",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Yesterday, Ratan Tata visited Air India corporate office.As per a source, he was deciding new cabin interiors with CEO Campbell Wilson.Upcoming milestones at Air India include 🔴Revealing new brand identity🔴Launch new group loyalty program🔴Induct 🇮🇳's 1st Airbus A350",
+    likes: {
+      likeCount: 711,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: false,
+    userImg: OIP,
+    img: "",
+    name: "John Kapoor",
+    username: "@johnKapoor",
+    createdAt: "May 7 2022",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "A breathtaking aerial encounter ✈️🤯📸: captured by Pilot Adam - who was slowly overtaking in one of our A350s above.",
+    likes: {
+      likeCount: 3249,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: true,
+    userImg: skyteam,
+    video: "",
+    name: "Sky Team",
+    username: "@skyTeam",
+    createdAt: "Aug 2 2021",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Very special flight this evening. Tonight I’ll be in command of a truly iconic aircraft, the last #B747 ever built, on the Incheon to Chengdu sector as GTI.8471. I think it’s appropriate I decorate the old flight case with the flight track flown by this very jet on its delivery flight. #QueenOfTheSkies #airlinepilot #pilot #aviation ",
+    likes: {
+      likeCount: 708,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    userImg: alexn,
+    img: "",
+    name: "Alex Ngotho",
+    username: "@alex ngotho",
+    createdAt: "March 25 2020",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Winning!! 🏆 The Sky Voyager BBJ design takes the crown for best private jet design concept for @designetal.From the kitchen to the lounge, #BoeingBusinessJets have us dreaming of stellar views. 🤩",
+    likes: {
+      likeCount: 1743,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: true,
+    userImg: BoeingAirplanes,
+    video: "",
+    name: "Boeing Airplanes",
+    username: "@boeingairplanes",
+    createdAt: "Dec 16 2022",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "From drop shots to match points, @rolandgarros had it all! 🙌🏆 Our hearts are racing for the final match at Court Philippe Chatrier and we can't wait to relive this experience next year! #RolandGarros",
+    likes: {
+      likeCount: 1307,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: true,
+    userImg: emirates,
+    video: "",
+    name: "Emirates",
+    username: "@emirates",
+    createdAt: "April 14 2017",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content: "The Premium experience - A330neo edition 😮‍💨📸: @AWBPhotography",
+    likes: {
+      likeCount: 937,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: false,
+    userImg: OIP,
+    img: "",
+    video: "",
+    name: "John Kapoor",
+    username: "@johnKapoor",
+    createdAt: "Jan 10 2020",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Despite its best efforts, JetBlue Airways has terminated its Northeast Alliance Agreement with American Airlines. https://airwaysmag.com/jetblue-terminates-nea/",
+    likes: {
+      likeCount: 592,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    userImg: alexn,
+    img: "",
+    name: "Alex Ngotho",
+    username: "@alex ngotho",
+    createdAt: "Aug 19 2022",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "Should all go as planned, there may be something rather exciting to look forward to from  @AkasaAir.#IYKYK #AvGeek",
+    likes: {
+      likeCount: 654,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    userImg: vtvlo,
+    img: "",
+    name: "vt-vlo",
+    username: "@vt-vlo",
+    createdAt: "Sep 11 2022",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "American Airlines (@AmericanAir) ordered 7 more E175s for its wholly-owned Envoy Air subsidiary. Here are some transaction highlights. #Embraer #WeAreEmbraer #EmbraerStories",
+    likes: {
+      likeCount: 3815,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: false,
+    userImg: AirlinersNet,
+    video: "",
+    img: "",
+    name: "Airliners Net",
+    username: "@airliners.net",
+    createdAt: "Feb 4 2019",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content: "#Palma, un balcón con vistas al #Mediterráneo. 💙",
+    likes: {
+      likeCount: 2043,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: false,
+    userImg: skyteam,
+    img: "",
+    name: "Sky Team",
+    username: "@skyTeam",
+    createdAt: "April 6 2022",
+    updatedAt: formatDate(),
+    follower: 0,
+  },
+  {
+    _id: uuid(),
+    content:
+      "This is the story of Aegean Airlines (A3) and its maiden flight from Athens (ATH) to Heraklion (HER) and Thessaloniki (SKG) in 1999. https://airwaysmag.com/aegean-airlines-takes-flight/",
+    likes: {
+      likeCount: 976,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    shouldDisplayImage: false,
+    shouldDisplayVideo: false,
+    userImg: AirlinersNet,
+    img: "",
+    video: "",
+    name: "Airliners Net",
+    username: "@airliners.net",
+    createdAt: "April 23 2020",
+    updatedAt: formatDate(),
+    follower: 0,
   },
 ];
