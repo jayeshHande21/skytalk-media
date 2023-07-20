@@ -30,12 +30,24 @@ export const PostsContextProvider = ({ children }) => {
           const postData = postResponse.data;
           dispatch({ type: "Get_Data", payload: postData.posts });
         }
+
+        const userResponse = await axios.get("/api/users");
+        if (userResponse.status === 200) {
+          const userData = postResponse.data;
+          dispatch({ type: "Get_User", payload: userData.users });
+        }
+
+        const bookmarkResponse = await axios.get("/api/bookmarks");
+        if (bookmarkResponse.status === 200) {
+          const bookmarksData = bookmarkResponse.data;
+          dispatch({ type: "Get_Bookmark", payload: bookmarksData.bookmark });
+        }
       } catch (error) {
         console.error(error);
       }
     };
 
-    fetchData(); // Call the async function inside useEffect
+    fetchData();
   }, []);
 
   console.log(state);
