@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import { MediaContext } from "../context/socialMediaContext";
+
 import { NavLink } from "react-router-dom";
+import { MediaContext } from "../Context/socialMediaContext";
 
 export const Suggesations = () => {
   const { handleFollowBtn, showSelectSuggesationData, suggesationUserName } =

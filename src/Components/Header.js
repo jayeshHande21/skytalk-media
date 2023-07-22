@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import OIP from "../backend/Images/OIP.jpg";
 import { UserProfile } from "../Pages/UserProfile";
-import { MediaContext } from "../context/socialMediaContext";
+import { MediaContext } from "../Context/socialMediaContext";
 
 export const Header = () => {
   const { showUserProfileData, handleSearchBtn } = useContext(MediaContext);

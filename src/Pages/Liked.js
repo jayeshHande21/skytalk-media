@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MediaContext } from "../context/socialMediaContext";
+import { MediaContext } from "../Context/socialMediaContext";
 import { Header } from "../Components/Header";
 import { MenuSection } from "../Components/MenuSection";
 import { Suggesations } from "../Components/Suggesations";

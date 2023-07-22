@@ -3,8 +3,7 @@ import React, { useContext } from "react";
 import { Header } from "../Components/Header";
 import { MenuSection } from "../Components/MenuSection";
 import { Suggesations } from "../Components/Suggesations";
-import { MediaContext } from "../context/socialMediaContext";
-
+import { MediaContext } from "../Context/socialMediaContext";
 export const UserProfile = () => {
   const {
     handleBookMarkedPost,

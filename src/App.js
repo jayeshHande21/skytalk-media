@@ -14,7 +14,7 @@ import { Explore } from "./Pages/Explore";
 import { Liked } from "./Pages/Liked";
 import { BookMarked } from "./Pages/BookMarked";
 import { UserProfile } from "./Pages/UserProfile";
-import { MediaContext } from "./context/socialMediaContext";
+// import { MediaContext } from "../context/socialMediaContext";
 import { UserSuggesationData } from "./Pages/UserSuggestionData";
 import OIP from "./backend/Images/OIP.jpg";
 import { Login } from "../src/Pages/Authentication/Login";

@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 // import DropdownMenu from "react-dropdown-menu";
 
-import { MediaContext } from "../context/socialMediaContext";
+import { MediaContext } from "../Context/socialMediaContext";
 import { Header } from "../Components/Header";
 import { MenuSection } from "../Components/MenuSection";
 import { Suggesations } from "../Components/Suggesations";

@@ -1,8 +1,7 @@
 import { useContext } from "react";
 
 import { NavLink } from "react-router-dom";
-
-import { MediaContext } from "../context/socialMediaContext";
+import { MediaContext } from "../Context/socialMediaContext";
 import bookmark from "../backend/Images/bookmark-white.png";
 import { Header } from "../Components/Header";
 import { MenuSection } from "../Components/MenuSection";
