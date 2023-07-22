@@ -4,11 +4,25 @@ import { createContext } from "react";
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const loginHandler = async () => {
+  const loginHandler = async (username, password) => {
+    const testCreds = {
+      username: "username",
+      password: "password",
+    };
     try {
-      const userResponse = await axios.post("/api/auth/login");
-      if (userResponse.status === 200) {
-        console.log(userResponse);
+      const response = await fetch("/api/auth/login", {
+        method: "POST",
+        body: JSON.stringify(testCreds),
+      });
+
+      console.log(response);
+      const data = await response.json();
+      console.log(data);
+
+      if (response.status === 200) {
+        const { foundUser, encodedToken } = response.data;
+        console.log("User Response:", foundUser);
+        console.log("Encoded Token:", encodedToken);
       }
     } catch (error) {
       console.error(error);

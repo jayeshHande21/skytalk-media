@@ -50,7 +50,7 @@ export const PostsContextProvider = ({ children }) => {
     fetchData();
   }, []);
 
-  console.log(state);
+  // console.log(state);
 
   const handlePostData = () => {
     const data = "JAYESH";

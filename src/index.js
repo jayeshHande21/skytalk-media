@@ -1,30 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
 import { makeServer } from "./server";
-// import reportWebVitals from "./reportWebVitals";
-import { PostContext, PostsContextProvider } from "./Context/PostContext";
-import { AuthContext, AuthProvider } from "./Context/AuthContext";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
+import { MediaContext, MediaProvider } from "./context/socialMediaContext";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
 
-export { PostContext, AuthContext };
+export { MediaContext };
 
-if (process.env.NODE_ENV === "development") {
-  makeServer({ environment: "development" }); // Start the MirageJS server in development mode
-}
-
+makeServer();
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <Router>
-      <PostsContextProvider>
-        {" "}
-        <AuthProvider>
-          <App />
-        </AuthProvider>
-      </PostsContextProvider>
+      <MediaProvider>
+        <App />
+      </MediaProvider>
     </Router>
-  </React.StrictMode>
+  </StrictMode>
 );
