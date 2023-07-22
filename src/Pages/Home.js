@@ -25,12 +25,10 @@ export const Home = () => {
   };
 
   const handleEdit = (post) => {
-    // Handle edit action for the post
     console.log("Edit post:", post);
   };
 
   const handleDelete = (post) => {
-    // Handle delete action for the post
     handleDeletePost(post._id);
   };
   return (

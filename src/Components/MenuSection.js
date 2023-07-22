@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { MediaContext } from "../context/socialMediaContext";
 import { NavLink } from "react-router-dom";
+
 export const MenuSection = () => {
   const { suggestions, handleHomeButton, handlePostClick } =
     useContext(MediaContext);

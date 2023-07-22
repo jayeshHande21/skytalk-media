@@ -1,11 +1,9 @@
 import { createContext, useState, useEffect } from "react";
 
-import "react-toastify/dist/ReactToastify.css";
 import { v4 as uuid } from "uuid";
 
 import { formatDate } from "../backend/utils/authUtils";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 import OIP from "../backend/Images/OIP.jpg";
 import { posts } from "../backend/db/posts";
 import { users } from "../backend/db/users";
@@ -33,7 +31,7 @@ export const MediaProvider = ({ children }) => {
 
   const handleSearchBtn = (event) => {
     const userSearched = event.target.value;
-    ("");
+
     if (userSearched) {
       const post = data.filter(({ name }) =>
         name.toUpperCase().includes(userSearched.toUpperCase())
@@ -152,15 +150,6 @@ export const MediaProvider = ({ children }) => {
     );
 
     if (!isBookMarked) {
-      toast.success(`Successfully edited`, {
-        position: "top-center",
-        autoClose: 1500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
       setBookMarkedPost([...bookMarkedPost, recentBookMarked]);
     }
   };

@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 
-import { MediaContext } from "../context/socialMediaContext";
 import { Header } from "../Components/Header";
 import { MenuSection } from "../Components/MenuSection";
 import { Suggesations } from "../Components/Suggesations";
+import { MediaContext } from "../context/socialMediaContext";
 
 export const UserProfile = () => {
   const {

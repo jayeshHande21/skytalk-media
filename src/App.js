@@ -7,7 +7,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import { useContext } from "react";
-import { ToastContainer } from "react-toastify";
 
 import { Home } from "./Pages/Home";
 import { Header } from "./Components/Header";
